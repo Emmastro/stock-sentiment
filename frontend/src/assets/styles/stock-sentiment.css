@@ -1,0 +1,150 @@
+.stock-sentiment {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stock-sentiment h1 {
+    color: #2c3e50;
+    margin-top: 0;
+  }
+  
+  .connection-status {
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .connected {
+    background-color: #e8f5e9;
+    color: #388e3c;
+  }
+  
+  .disconnected {
+    background-color: #ffebee;
+    color: #d32f2f;
+  }
+  
+  .reconnect-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .reconnect-btn:hover {
+    background-color: #b71c1c;
+  }
+  
+  .input-section {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  
+  .input-section input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .stock-sentiment button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    min-width: 120px;
+  }
+  
+  .stock-sentiment button:hover {
+    background-color: #45a049;
+  }
+  
+  .stock-sentiment button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-left: 4px solid #d32f2f;
+  }
+  
+  .history-section {
+    margin-top: 30px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .refresh-btn {
+    background-color: #2196F3;
+    font-size: 14px;
+    padding: 6px 12px;
+    min-width: auto;
+  }
+  
+  .refresh-btn:hover {
+    background-color: #1976D2;
+  }
+  
+  .loading-history {
+    text-align: center;
+    padding: 20px;
+    color: #757575;
+  }
+  
+  .stock-sentiment table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .stock-sentiment th, 
+  .stock-sentiment td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .stock-sentiment th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  .positive {
+    color: #388e3c;
+    font-weight: bold;
+  }
+  
+  .neutral {
+    color: #f57c00;
+    font-weight: bold;
+  }
+  
+  .negative {
+    color: #d32f2f;
+    font-weight: bold;
+  }

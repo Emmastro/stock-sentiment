@@ -1,0 +1,66 @@
+# Go specific
+/backend/backend
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/vendor/
+/go.work
+
+# Vue/Node specific
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env.local
+/frontend/.env.*.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/.pnpm-debug.log*
+/frontend/.DS_Store
+/frontend/.editorconfig
+/frontend/.local
+
+# Protobuf generated files
+*.pb.go
+*_grpc.pb.go
+*_pb.js
+*_grpc_web_pb.js
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Binary files
+/backend/stock-sentiment
+
+# Debug files
+__debug_bin
+debug.test
+
+# Environment variables
+.env
+*.env
+
+# Logs
+*.log
+
+# Build directories
+/bin/
+/build/

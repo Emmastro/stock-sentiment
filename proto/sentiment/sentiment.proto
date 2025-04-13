@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package sentiment;
+option go_package = "stock-sentiment/backend/proto/sentiment";
+
+import "google/protobuf/timestamp.proto";
+
+enum SentimentType {
+  UNKNOWN = 0;
+  POSITIVE = 1;
+  NEUTRAL = 2;
+  NEGATIVE = 3;
+}
+
+message AnalyzeRequest {
+  string symbol = 1;
+}
+
+message SentimentResult {
+  string symbol = 1;
+  SentimentType sentiment = 2;
+  google.protobuf.Timestamp analyzed_at = 3;
+}
+
+
+message GetHistoryRequest {
+}
+
+// TODO: what is repeated here. What is the = 1
+message GetHistoryResponse {
+  repeated SentimentResult results = 1;
+}
+
+service SentimentService {
+  // Analyze analyzes the sentiment for a given stock symbol
+  rpc Analyze(AnalyzeRequest) returns (SentimentResult);
+  
+  // GetHistory returns all previously analyzed sentiments
+  rpc GetHistory(GetHistoryRequest) returns (GetHistoryResponse);
+}
